@@ -1,6 +1,6 @@
 .category-modal{
     border: 2px solid black;
-    width: 40%;
+    width: 70%;
     background: rgb(100, 100, 100);
     background-image: url(https://images.unsplash.com/photo-1569075319321-f73e651c2c7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1930&q=80);
     background-size: cover;
@@ -25,7 +25,7 @@
     }
     .select-grid{
       display: grid;
-      grid-template-columns: repeat(3 ,1fr);
+      grid-template-columns: 1fr;
       padding: 6px;
       margin-top: 10px;
       font-size: 1.25rem;
