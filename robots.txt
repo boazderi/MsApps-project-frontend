@@ -1,0 +1,3 @@
+# https://www.picstxt.org/picstxt.html
+User-agent: *
+Disallow:

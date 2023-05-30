@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/MsApps-project-frontend/static/css/main.8a5b5270.css",
+    "main.js": "/MsApps-project-frontend/static/js/main.67b8896b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/MsApps-project-frontend/static/js/787.28cb0dcd.chunk.js",
+    "static/media/maple-150867.svg": "/MsApps-project-frontend/static/media/maple-150867.a8cb5801dba93a2733f9.svg",
+    "static/media/Caveat-Regular.ttf": "/MsApps-project-frontend/static/media/Caveat-Regular.a1e626469343821ea869.ttf",
+    "static/media/Montserrat-Medium.ttf": "/MsApps-project-frontend/static/media/Montserrat-Medium.e2d60bc49517598c0ce8.ttf",
+    "static/media/Lato-Regular.ttf": "/MsApps-project-frontend/static/media/Lato-Regular.9919edff6283018571ad.ttf",
+    "index.html": "/MsApps-project-frontend/index.html",
+    "main.8a5b5270.css.map": "/MsApps-project-frontend/static/css/main.8a5b5270.css.map",
+    "main.67b8896b.js.map": "/MsApps-project-frontend/static/js/main.67b8896b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/MsApps-project-frontend/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a5b5270.css",
+    "static/js/main.67b8896b.js"
+  ]
+}
