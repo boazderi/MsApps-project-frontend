@@ -1,0 +1,66 @@
+.app-header {
+  padding: 10px 25px;
+  position: sticky ;
+  header{
+    margin: auto;
+  }
+  top: 0;
+  z-index: 10;
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/27/18/39/background-1776015_1280.jpg);
+  .category-sort-btns{
+    padding: 0 4px;
+    background: rgba(230, 230, 230, 0.858);
+    align-items: center;
+    border-radius: 8px;
+    height: 50px;
+    margin: 0 auto;
+    .header-btn{
+      padding: 0 4px;
+      height: 100%;
+      &.sort-btn{
+        width: 26px;
+        background-image: url('../../images/sort.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border-radius: 0;
+      }
+      &:hover{
+        opacity: .75;
+      }
+    }
+    .header-divider-line{
+      height: 100%;
+      width: 1px;
+      background-color: rgb(0, 0, 0);
+    }
+  }
+  
+  .prev-btn , .next-btn{
+    width: 70px;
+    height: 65px;
+    background-image: url('../../images/maple-150867.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 0;
+    &:hover{
+      transition: .7s;
+      transform: rotate(20deg);
+    }
+    &.disable{
+      color: rgba(0, 0, 0, 0.541);
+      cursor: default;
+      &:hover{
+        transform: rotate(0deg);
+        background-position: center;
+        opacity: 1;
+      }
+    }
+  }
+  .prev-btn{
+    &:hover{
+      transform: rotate(-20deg);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.pics-container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 15px;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  
+  .standart-img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    cursor: pointer;
+    border: 1px solid rgba(75, 75, 75, 0.2);
+    transition: .5s;
+    &:hover{
+      opacity: .92;
+      transform: scale(1.03);
+    }
+  }
+}

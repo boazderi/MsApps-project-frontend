@@ -1,0 +1,44 @@
+.sort-options-modal{
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: calc(50% - 15px);
+    transition: all .4s;
+    &.close{
+        top: -300px;
+    }
+    &.open{
+        top: 80px;
+    }
+    .arrow-up{
+        width: 15px;
+        height: 15px;
+        transform: rotate(45deg);
+        background-color: rgb(240, 240, 240);
+        position:absolute;
+        top: -5px;
+        right: 50%;
+    }
+    .sort-modal-title{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 4px;
+        border-bottom: 1px solid black;
+    }
+    .sort-option{
+        margin-right: 10px;
+        margin-bottom: 3px;
+        border-radius: 6px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 100%;
+        text-align: start;
+        &:hover{
+            background-color: rgba(200, 200, 200, 0.75);
+        }
+        &.active{
+            background-color: rgba(68, 163, 246, 0.75);
+        }
+    }
+}

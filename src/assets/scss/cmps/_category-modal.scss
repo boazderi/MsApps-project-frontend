@@ -1,0 +1,52 @@
+.category-modal{
+    border: 2px solid black;
+    width: 40%;
+    background: rgb(100, 100, 100);
+    background-image: url(https://images.unsplash.com/photo-1569075319321-f73e651c2c7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1930&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    filter: brightness(90%);  border-radius: 20px;
+    z-index: 100;
+    color: white;
+    padding: 25px;
+    z-index: 9;
+    position: absolute;
+    transition: all .6s;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    &.close{
+      top: -50vh;
+    }
+    &.open{
+      top: 50vh;
+      box-shadow: 0 0 0 100vh #00000069;
+    }
+    .select-grid{
+      display: grid;
+      grid-template-columns: repeat(3 ,1fr);
+      padding: 6px;
+      margin-top: 10px;
+      font-size: 1.25rem;
+      border-radius: 5px;
+    }
+    .category-option{
+      text-transform: capitalize;
+      padding: 6px 12px ;
+      margin: 6px;
+      cursor: pointer;
+      border: 1px solid white;
+      border-radius: 5px;
+      &:hover{
+        opacity: .8;
+      }
+      &.selected{
+        background-color: #f5f5f5a2;
+        border-color: #f5f5f5;
+        color: #2a4624;
+      }
+    }
+    
+  }
+  
