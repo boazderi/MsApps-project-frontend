@@ -17,8 +17,7 @@
   transform: translate(-50%, -50%);
   box-shadow: 0 0 0 100vh #00000069;
   transition: .6s;
-  min-width: 40%;
-  min-height: 40%;
+  max-height: 75vh;
 
   &.close {
     opacity: 0;
@@ -30,23 +29,49 @@
     opacity: 1;
   }
 
+  &.hige-modal{
+    max-height: 75vh;
+    min-width: 40vw;
+  }
+
+  &.wide-modal{
+    max-width: 80vw;
+  }
+
 
   .details-title {
     text-align: center;
     padding: 4px;
     border-bottom: 1px solid #ffffff;
   }
-
+  .pic-container{
+    align-self: center;
+    display: flex;
+    justify-content: center;
     .pic-details-img {
-      margin: 15px 0;
-      width: 100%;
+      align-self: center;
+      padding: 10px;
+      width: 80%;
       height: 100%;
       object-fit: contain;
-    }
+
   
+      &.hige-image {
+        max-height: 50vh;
+      }
+  
+      &.wide-image {
+        max-height: 50vh;
+        max-width: 100%;
+      }
+    }
+    
+  }
+
 
   .detail-item {
     font-size: 1.25rem;
+    margin-left: 2%;
 
     .detail-subtitle {
       text-transform: capitalize;
