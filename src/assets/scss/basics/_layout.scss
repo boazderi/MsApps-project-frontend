@@ -20,25 +20,27 @@
 
   /* EXTRA SMALL */
 
-  @media (min-width:350px) {
+  @media (min-width: $mobile-breakpoint) {
     .pics-container {
       padding: 25px;
       grid-template-columns: 1fr;
       gap: 15px;
     }
-    .category-modal{
+
+    .category-modal {
       width: 60%;
     }
   }
 
   /* SMALL */
 
-  @media (min-width:640px) {
+  @media (min-width:$narrow-breakpoint) {
     .pics-container {
       padding: 10px;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
+
     .category-modal {
       .select-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -48,7 +50,7 @@
 
   /* MEDIUM */
 
-  @media (min-width:940px) {
+  @media (min-width:$normal-breakpoint) {
     .pics-container {
       padding: 25px;
       grid-template-columns: repeat(3, 1fr);
@@ -57,6 +59,7 @@
 
     .category-modal {
       width: 50%;
+
       .select-grid {
         grid-template-columns: repeat(3, 1fr);
       }

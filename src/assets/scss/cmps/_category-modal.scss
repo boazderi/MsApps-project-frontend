@@ -15,12 +15,11 @@
     position: absolute;
     transition: all .6s;
     left: 50vw;
-    transform: translate(-50%, -50%);
     &.close{
-      top: -50vh;
+      transform: translate(-50%, -100%,);
     }
     &.open{
-      top: 50vh;
+      transform: translate(-50%, 150%,);
       box-shadow: 0 0 0 100vh #00000069;
     }
     .select-grid{
