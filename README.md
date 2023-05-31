@@ -4,8 +4,8 @@
 <ul>
   <li>Download the code to your computer from here and from the backend repository <a href="https://github.com/boazderi/MsApps-project-Backend"> Backend repo </a> </li>
   <li> Open the files in VsCode (or other IDE)</li>
-  <li> First - in the backend, in the command line run: npm i, and after that npm start </li>
-  <li> Second - in the frontend, run: npm i, and after that npm start </li>
+  <li> First - in the backend, in the command line run "npm i" and after that "npm start" </li>
+  <li> Second - in the frontend, run "npm i" and after that "npm start" </li>
 </ul>
 
 <h2>Stack: </h2>
