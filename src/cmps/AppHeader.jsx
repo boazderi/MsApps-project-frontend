@@ -7,12 +7,12 @@ import { utilService } from '../services/util.service'
 
 const AppHeader = () => {
 
-    // State variables defining
+    // State variables definitions
     const { page, category } = useSelector(state => state.picModule.filterBy)
     const maxPages = useSelector(state => state.picModule.maxPages)
     const dispatch = useDispatch()
 
-    // Category and sort modals handlers defining
+    // Category and sort modals handlers definitions
     const [isCategoriesModalOpen, setIsCategoriesModalOpen] = useState(false)
     const [isSortModalOpen, setIsSortModalOpen] = useState(false)
     const categoryBtnRef = useRef(null)

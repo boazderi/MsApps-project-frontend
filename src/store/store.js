@@ -10,5 +10,3 @@ const rootReducer = combineReducers({
 })
 
 export const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
-
-// window.gStore = store

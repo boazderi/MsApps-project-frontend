@@ -4,19 +4,19 @@ import { useSelector } from 'react-redux';
 import { utilService } from '../services/util.service'
 
 const GalleryPage = () => {
-    
-    // State variable defining
+
+    // State variable definitions
     const pics = useSelector(state => state.picModule.pics)
 
-    // Modal handlers defining
+    // Modal handlers definitions
     const [isPicModalOpen, setIsPicModalOpen] = useState(false)
     const [selectedPic, setSelectedPic] = useState(null)
     const { handleToggleModal } = utilService
     const detailsPicRef = useRef(null)
 
-    const showDetails = async (picId) => {
+    const showDetails = (picId) => {
         const currPic = pics.find(pic => pic.id === picId)
-        await setSelectedPic(currPic)
+        setSelectedPic(currPic)
         handleToggleModal(setIsPicModalOpen, isPicModalOpen)
     }
 
@@ -28,7 +28,7 @@ const GalleryPage = () => {
                         ref={detailsPicRef}
                         src={pic.webformatURL}
                         alt={pic.tags}
-                        className="standart-img"
+                        className="standard-img"
                         onClick={() => showDetails(pic.id)}
                     />
                 </div>
