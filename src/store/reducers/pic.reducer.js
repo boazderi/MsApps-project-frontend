@@ -5,7 +5,7 @@ const INITIAL_STATE = {
         category: '',
     },
     sortBy: 'views',
-    maxPages: null,
+    maxPages: 10,
 }
 
 
@@ -42,12 +42,6 @@ export function picReducer(state = INITIAL_STATE, action) {
                 ...state,
                 sortBy: action.sortBy
             }
-        case 'SET_MAX_PAGES':
-            return {
-                ...state,
-                maxPages: action.maxPages
-            }
-
         default:
             return state
     }

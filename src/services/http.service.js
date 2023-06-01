@@ -1,5 +1,4 @@
 import Axios from 'axios'
-// import { router } from '@/router'
 
 const BASE_URL = process.env.NODE_ENV === 'production'
     ? '/api/'
@@ -41,10 +40,6 @@ async function ajax(endpoint, method = 'GET', data = null) {
         if (err.response && err.response.status === 401) {
             sessionStorage.clear()
             window.location.assign('/')
-            // Depends on routing startegy - hash or history
-            // window.location.assign('/#/login')
-            // window.location.assign('/login')
-            // router.push('/login')
         }
         throw err
     }

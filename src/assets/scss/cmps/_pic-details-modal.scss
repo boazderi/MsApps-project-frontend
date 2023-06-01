@@ -31,13 +31,12 @@
 
   &.hige-modal{
     max-height: 75vh;
-    min-width: 40vw;
+    min-width: 35vw;
   }
 
   &.wide-modal{
     max-width: 80vw;
   }
-
 
   .details-title {
     text-align: center;
@@ -51,23 +50,12 @@
     .pic-details-img {
       align-self: center;
       padding: 10px;
-      width: 80%;
+      width: 90%;
       height: 100%;
       object-fit: contain;
-
-  
-      &.hige-image {
-        max-height: 50vh;
-      }
-  
-      &.wide-image {
-        max-height: 50vh;
-        max-width: 100%;
-      }
-    }
-    
+      max-height: 50vh;
+    }    
   }
-
 
   .detail-item {
     font-size: 1.25rem;

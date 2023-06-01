@@ -5,8 +5,7 @@ export function loadPics(filterBy, sortBy) {
     return async (dispatch) => {
         try {
             const data = await picService.query(filterBy, sortBy)
-            dispatch({ type: 'SET_PICS', pics: data.filteredPics })
-            dispatch({ type: 'SET_MAX_PAGES', maxPages: data.totalPages })
+            dispatch({ type: 'SET_PICS', pics: data.sortedPics })
         } catch (err) {
             console.log('err:', err)
         }

@@ -1,12 +1,14 @@
 .app-header {
   padding: 10px 25px;
   position: sticky ;
-  header{
-    margin: auto;
-  }
   top: 0;
   z-index: 10;
   background-image: url(https://cdn.pixabay.com/photo/2016/10/27/18/39/background-1776015_1280.jpg);
+  
+  header{
+    margin: auto;
+  }
+  
   .category-sort-btns{
     padding: 0 4px;
     background: rgba(230, 230, 230, 0.858);
@@ -14,9 +16,12 @@
     border-radius: 8px;
     height: 50px;
     margin: 0 auto;
+    
     .header-btn{
       padding: 0 4px;
       height: 100%;
+      font-size: 1.4em;
+
       &.sort-btn{
         width: 26px;
         background-image: url('../../images/sort.png');
@@ -29,6 +34,7 @@
         opacity: .75;
       }
     }
+
     .header-divider-line{
       height: 100%;
       width: 1px;
@@ -58,6 +64,7 @@
       }
     }
   }
+  
   .prev-btn{
     &:hover{
       transform: rotate(-20deg);

@@ -6,14 +6,14 @@ import useClickOutside from '../../hooks/useClickOutside';
 const CategoryModal = ({ setIsCategoriesModalOpen, isCategoriesModalOpen, handleToggleModal, categoryBtnRef }) => {
     const dispatch = useDispatch();
     const categories = ['work', 'sports', 'nature', 'cities', 'animals', 'food', 'technology', 'art', 'music'];
-    const { page, category } = useSelector(state => state.picModule.filterBy)
+    const { category } = useSelector(state => state.picModule.filterBy)
     const categoryModalRef = useRef(null)
 
     useClickOutside(categoryModalRef, () =>
         handleToggleModal(setIsCategoriesModalOpen, isCategoriesModalOpen), categoryBtnRef)
 
     const handleSelect = (newCategory) => {
-        dispatch(setFilterBy({ page, category: newCategory }))
+        dispatch(setFilterBy({ page: 1, category: newCategory }))
         handleToggleModal(setIsCategoriesModalOpen, isCategoriesModalOpen)
     }
 

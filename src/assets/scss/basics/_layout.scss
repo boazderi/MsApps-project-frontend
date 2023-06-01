@@ -30,6 +30,15 @@
     .category-modal {
       width: 60%;
     }
+    .pic-details-modal{
+      .detail-item {
+        font-size: 1rem;
+        .detail-subtitle{
+          font-size: 1.2rem;
+        }
+      }
+    }
+
   }
 
   /* SMALL */
@@ -92,4 +101,18 @@
       padding: 0 50px;
     }
   }
+
+  // BIG PHONES SCREEN
+  @media (min-width: 900px) and (min-height: 1800px ) {
+    .pics-container {
+      padding: 25px;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .category-modal {
+      width: 60%;
+    }
+  }
+
 }

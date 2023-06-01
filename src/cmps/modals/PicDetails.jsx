@@ -1,17 +1,16 @@
 import React, { useRef } from 'react'
 import useClickOutside from '../../hooks/useClickOutside'
 
-const PicDetailsModal = ({ handleToggleModal, selectedPic, setIsPicModalOpen, isPicModalOpen, detailsPicRef }) => {
+const PicDetailsModal = ({handleToggleModal ,selectedPic ,setIsPicModalOpen, isPicModalOpen, detailsPicRef }) => {
     const detailsList = ['views', 'downloads', 'collections', 'likes', 'tags']
     const picDetailsModalRef = useRef(null)
-
 
     useClickOutside(picDetailsModalRef, () =>
         handleToggleModal(setIsPicModalOpen, isPicModalOpen), detailsPicRef)
 
     return (
         <>
-            {isPicModalOpen && <section
+            {selectedPic && <section
                 ref={isPicModalOpen ? picDetailsModalRef : null}
                 className={`pic-details-modal flex ${isPicModalOpen ? 'open' : 'close'}
               ${selectedPic.webformatHeight > selectedPic.webformatWidth ? 'hige-modal' : 'wide-modal'}`}>
@@ -28,7 +27,6 @@ const PicDetailsModal = ({ handleToggleModal, selectedPic, setIsPicModalOpen, is
                     })}
                 </ul>
                 <button className='close-modal-btn' onClick={() => {
-                    console.log(selectedPic)
                     setIsPicModalOpen(false)
                 }
                 } > Close </button>

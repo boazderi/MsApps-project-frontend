@@ -16,10 +16,10 @@
     transition: all .6s;
     left: 50vw;
     &.close{
-      transform: translate(-50%, -100%,);
+      transform: translate(-50%, -60vh,);
     }
     &.open{
-      transform: translate(-50%, 150%,);
+      transform: translate(-50%, 50vh,);
       box-shadow: 0 0 0 100vh #00000069;
     }
     .select-grid{
@@ -29,7 +29,7 @@
       margin-top: 10px;
       font-size: 1.25rem;
       border-radius: 5px;
-      gap: 15px;
+      gap: 20px;
     }
     .category-option{
       text-transform: capitalize;
